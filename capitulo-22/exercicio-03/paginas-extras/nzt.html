@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        div#circle {
+            padding: 300px 10px 75px -10px;
+            background-color: white;
+            margin: auto;
+            border: 1px solid white;
+            border-radius: 5000px;
+            height: 650px;
+            width: 650px;   
+
+        }
+
+        table {
+            padding: 300px;
+            background-color: white;
+            border-collapse: collapse;
+            width: 100px;
+            transform: rotate(300deg);
+            margin: auto;
+            margin-top: 130px;
+        }
+
+        td {
+            border: 1px solid transparent;
+            padding: 40px;
+        }
+
+        td.black {
+            background-color: black;
+            border-color: black;
+        }
+
+        td.red {
+            background-color: red;
+        }
+
+        td.white {
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="circle">
+        <table>
+            <tr>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td colspan="3" class="black"></td>
+            </tr>
+            <tr>
+                <td class="black"></td>
+                <td class="white"></td>
+                <td rowspan="4" class="black"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="black"></td>
+                <td colspan="2" class="black"></td>
+        
+            </tr>
+            <tr>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td rowspan="2" class="black"></td>
+        
+            </tr>
+            <tr>
+                <td colspan="2" class="black"></td>
+                <td class="white"></td>
+        
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

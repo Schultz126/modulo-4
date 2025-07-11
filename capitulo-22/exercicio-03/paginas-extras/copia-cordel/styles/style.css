@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Caveat:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Shadows+Into+Light&display=swap');
+@font-face {
+    font-family: 'Butler';
+    src: url('../../fontes/Butler_Ultra_Light.otf') format('opentype');
+    src: url('../../fontes/Butler_Medium.otf') format('opentype');  
+    src: url('../../fontes/Butler_Medium.otf') format('opentype');
+    src: url('../../fontes/Butler_Bold.otf') format('opentype'); 
+    src: url('../../fontes/Butler_Light.otf') format('opentype');
+}
+
+:root {
+    --fonte1: 'Arial', 'sans-serif';
+    --fonte2: 'Caveat', 'sans-serif';
+    --fonte3: 'Butler', 'serif';
+
+    --img1: url('../imagens/flores-amarelas-1500x1000.jpg');
+    --img2: url('../imagens/cartas-1500x844.jpg');
+}
+
+.poetryblock {
+    display: block;
+    text-indent: -1em;
+    padding-left: 2em;
+    font-family: var(--fonte2);
+    margin-left: 0.65em;
+    font-size: 5vw;
+}
+
+header {
+    font-family: var(--fonte3);
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    box-shadow: -2px 0px 6px 1px rgba(0, 0, 0, 0.467);
+}
+
+header > h1 {
+    margin: 0px;
+    font-size: 8.5vw;
+    font-weight: bold;
+}
+
+p > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+p > a:hover {
+    text-decoration: underline;
+}
+
+header > p {
+    font-weight: light;
+    margin: 0px;
+}
+
+div.borda {
+    background-color: rgba(0, 0, 0, 0.449);
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: 45vw;
+    color: white;
+    box-shadow: -2px 0px 4px 2px rgba(0, 0, 0, 0.321);
+}
+
+div#b2-container {
+    position: relative; 
+    background-color: white;
+    background-image: var(--img1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: inset -2px 0px 11px 3px rgba(0, 0, 0, 0.353);
+}
+
+div#b5-container {
+    position: relative; 
+    background-color: white;
+    background-image: var(--img2);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: inset -2px 0px 11px 3px rgba(0, 0, 0, 0.353);
+}
+
+body {
+    margin: 0px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer > p {
+    font-weight: lighter;
+    padding: 0.8vw;
+    font-size: 2.5vmin;
+    margin: 0px 0.5vw 0px 0.5vw;
+}
+
+footer > p > a {
+    font-weight: bold;
+}
