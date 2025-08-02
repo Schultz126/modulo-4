@@ -41,6 +41,7 @@ section#menu-icones {
     @media screen and (max-width: 1011px){
         left: 86vw;
     }
+    text-align: right;
     top: 2%;
     background-color: transparent;
     position: absolute;
@@ -54,6 +55,17 @@ section#menu-icones {
     margin: 50% 0%;
     border-radius: 50px;
     font-size: 1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.227);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.roundButton:hover {
+    width: 55px;
+    height: 55px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
 }
 
 iframe#tela {
