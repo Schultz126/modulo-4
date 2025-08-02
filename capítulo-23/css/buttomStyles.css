@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#instagramButton {
+    background: white url('../../pacote-d013/pacote-d013/imagens/logo-instagram.jpg') no-repeat top center;
+    background-size: cover;
+}
+#githubButton {
+    background: white url('../../pacote-d013/pacote-d013/imagens/logo-github.jpg') no-repeat top center;
+    background-size: cover;
+}
+#youtubeButton {
+    background: white url('../../pacote-d013/pacote-d013/imagens/logo-youtube.jpg') no-repeat top center;
+    background-size: cover;
+}
+#facebookButton {
+    background: white url('../../pacote-d013/pacote-d013/imagens/logo-facebook.jpg') no-repeat top center;
+    background-size: cover;
+}
+#twitterButton {
+    background: white url('../../pacote-d013/pacote-d013/imagens/logo-twitter.jpg') no-repeat top center;
+    background-size: cover;
+}

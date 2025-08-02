@@ -35,11 +35,11 @@ section#celular {
 }
 
 section#menu-icones {
-    @media screen and (min-width: 530px){
-        left: 90%;
+    @media screen and (min-width: 1010px){
+        left: 95vw;
     }
-    @media screen and (max-width: 531px){
-        left: 86%;
+    @media screen and (max-width: 1011px){
+        left: 86vw;
     }
     top: 2%;
     background-color: transparent;
@@ -53,6 +53,7 @@ section#menu-icones {
     height: 50px;
     margin: 50% 0%;
     border-radius: 50px;
+    font-size: 1em;
 }
 
 iframe#tela {
