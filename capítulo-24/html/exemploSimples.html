@@ -12,17 +12,45 @@
     <!--method pode ser GET, por padrão, ou POST. A mudança está no local em que os dados submetidos irão aparecer-->
     <!--POST não protege os dados, para isso tem de ser usar https (mais coisas para estudar depois )-->
     <form autocomplete="off" method="POST" autocapitalize="on"> 
-        <p><label for="nome">Nome:</label> <input type="text" id="nome"></p>
-        <p>Data: <input type="date"></p>
-        <p>Opção 1<input type="checkbox" name="checagem">opção 2 <input type="checkbox" name="checagem"></p>
-        <p><input type="color"></p>
-        <p>datetime: <input type="datetime"></p>
-        <p>datetime-local: <input type="datetime-local"></p>
-        <p>Email: <input type="email"></p>
-        <p>File: <input type="file"></p>
-        <p>Hidden: <input type="hidden"></p>
-        <p>Image<input type="image"></p>
-        <p>Submit:<input type="submit" value="Enviar"></p>
+        <fieldset>
+            <legend>Mutchos dados</legend>
+                <p><label for="nome">Nome:</label> <input type="text" id="nome"></p>
+                <p>Data: <input type="date"></p>
+                <p>Opção 1<input type="checkbox" name="checagem">opção 2 <input type="checkbox" name="checagem"></p>
+                <p><input type="color"></p>
+                <p>datetime: <input type="datetime"></p>
+                <p>datetime-local: <input type="datetime-local"></p>
+                <p>Email: <input type="email"></p>
+                <p>File: <input type="file"></p>
+                <p>Hidden: <input type="hidden"></p>
+                <p>Image<input type="image"></p>
+                <p>Submit:<input type="submit" value="Enviar"></p>
+                <p><input type="radio" name="bola" id="op1" value="M"><label for="op1">Opção 1</label> <input type="radio" name="bola" id="op2" value="F"> <label for="op2">Opção 2</label></p>
+                <p><input type="range" min="1" max="5"></p>
+                <p>Resetar:<input type="reset" value="Limpar"></p>
+                <select name="cores" id="cores">
+                    <optgroup label="Primárias">
+                        <option value="Azul">Azul</option>
+                        <option value="Amarelo">Verde</option>
+                        <option value="Vermelho">Vermelho</option>
+                    </optgroup>
+                    <optgroup label="Secundárias">
+                        <option value="Verde">Verde</option>
+                        <option value="Roxo">Roxo</option>
+                        <option value="Laranja">Laranja</option>
+                    </optgroup>
+                </select>
+                <p><label for="profissao">Profissão: <input type="text" id="profissao" placeholder="Digite sua profissão" list="lista"></label></p>
+                <datalist id="lista">
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                    <option value="FLOR">Florista</option>
+                </datalist>
+                <p>
+                    Texto: <br> 
+                    <textarea name="textbox" id="textbox" cols="30" rows="10"></textarea>
+                </p>
+        </fieldset>
     </form>
 </body>
 </html>
