@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (min-width: 600px) {
+            form {
+                grid-template-columns: 120px 1fr;
+            }
+            
+            .form-buttons {
+                grid-column: 1 / -1;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+        
+        p {
+            margin: 0;
+            display: contents; /* This makes the p element participate in grid layout */
+        }
+        
+        label {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+        
+        .form-buttons {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Os input só enviam se digitar algo</h1>
+    <form action="" method="POST" autocomplete="on">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required minlength="5" maxlength="20" placeholder="nome" autocomplete="username">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required minlength="8" placeholder="min 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <label for="avaliacao">Avaliação: </label>
+            <input type="number" step="0.1" id="avaliacao" value="5">
+        </p>
+        <div class="form-buttons">
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
