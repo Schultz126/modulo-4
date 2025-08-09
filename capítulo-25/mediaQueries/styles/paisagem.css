@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    background: url('../../pacote-imagens-cap25/imagens/cev-landscape.jpg') left bottom no-repeat;
+    background-size: cover; 
+}
