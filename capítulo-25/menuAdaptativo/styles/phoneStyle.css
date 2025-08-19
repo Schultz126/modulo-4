@@ -42,6 +42,10 @@
         transition: 0.3s;
     }
 
+    #burguer:active {
+        background-color: rgb(69, 68, 68);
+    }
+
     .no-display {
         display: none;
     }
