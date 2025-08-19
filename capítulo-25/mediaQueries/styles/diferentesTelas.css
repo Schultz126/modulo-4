@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/*
+    Typical Devices Breakpoints
+
+    Extra Small: <= 600px
+    Small: 767px
+    Medium: 991px
+    Large: 1199px
+    Extra Large: >= 1200px
+*/
+
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    #tv, #pc, #tablet, #phone {
+        display: none;
+    }
+
+    #printer {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: url(../../pacote-imagens-cap25/imagens/back-tablet.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #tv, #printer, #pc, #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: url(../../pacote-imagens-cap25/imagens/back-pc.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #tv, #printer, #tablet, #phone {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(../../pacote-imagens-cap25/imagens/back-tv.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #pc, #printer, #tablet, #phone {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+}
